@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+/* Classes gerais */
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/******/
+
+header {
+    padding: 10px 2% 40px 2%;
+    background-color: rgb(180, 180, 180);
+}
+
+.logo-1 {
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-image: url('../imagens/logo1.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: purple;*/
+}
+
+.logo-2 {
+    float: right;
+    width: 150px;
+    height: 60px;
+    background-image: url('../imagens/logo2.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: green;*/
+}
+
+section.cover-form {
+    width: 100%;
+}
+
+.bg {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../imagens/bg.png');
+}
+
+.form-container {
+    z-index: 2;
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: 110%;
+    position: relative;
+    top: -5%;
+    box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);
+    background-color: white;
+}
+
+.form-container h2 {
+    font-weight: normal;
+    padding: 25px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(210, 210, 210);
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p {
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-container form input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 40px;
+}
+
+.form-wraper:last-child {
+    margin-top: 20px;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+section.chamada {
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+}
+
+section.chamada .container {
+    padding: 50px 0;
+    background-color: #7c6757;
+
+}
+
+section.chamada h2 {
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+}
+
+section.chamada h4 {
+    margin-top: 5px;
+    width: 98%;
+    max-width: 500px;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1-mosaico {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico {
+    background-color: #215170;
+    padding: 60px 80px;
+    width: 40%;
+}
+
+.item-2-mosaico p {
+    text-align: justify;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+footer img {
+    width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item-1-mosaico {
+        width: 100%;
+        padding: 20%;
+    }
+
+    .item-2-mosaico {
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .form-container {
+        position: relative;
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    header {
+        text-align: center;
+    }
+
+    .logo-1,
+    .logo-2 {
+        display: inline-block;
+        float: none;
+        margin-top: 10px;
+    }
+}
