@@ -1,4 +1,4 @@
-# Landing Page
+# Landing Page 02
 
 Site feito em <code>HTML5</code> e <code>CSS3</code>
 
